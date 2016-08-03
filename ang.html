@@ -1,0 +1,375 @@
+<!-- <!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+<p> try to chang it</p>
+
+<div ng-app="myapp" ng-controller="myCtrl">
+First Name: <input type="text" ng-model="firstName"><br>
+Last Name: <input type="text" ng-model="lastName"><br>
+<br>
+Full Name: {{firstName + " " + lastName}}
+
+</div>
+
+<script>
+
+var app = angular.module('myapp', []);
+
+app.controller('myCtrl', function($scope){
+
+
+    $scope.firstName= "John";
+    $scope.lastName= "Doe";
+});
+</script>
+
+</body>
+</html> -->
+
+
+<!-- <!Doctype html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+<body>
+
+<div ng-app >
+
+<p> my first expression: {{5+5}}</p>
+
+</div>
+
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+
+<html>
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+<body>
+
+<p> change the value of the input field</p>
+
+
+<div ng-app ="" ng-init = "mycol='red'">
+
+<input style ="background-color:{{mycol}}" ng-model ="mycol" value ="{{mycol}}">
+
+</div>
+
+</body>
+
+</html>	 -->
+
+<!-- <html>
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+<body>
+
+<div ng-app= " " ng-init= "firstName ='John';lastName='Doe'">
+
+
+<p>The full name is: {{ firstName + " " + lastName }}</p>
+
+</div> -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+<div ng-app="" ng-init="points=[1,15,19,2,40]">
+<p> the third result is <span ng-bind ="points[2]"></span></p>
+<p>The third result is {{ points[2] }}</p>
+
+</div>
+
+
+</body>
+</html> --> 
+
+
+<!-- <!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+<div ng-app="myapp" ng-controller="myctrl">
+{{ firstName + " " + lastName }}
+</div>
+
+<script>
+var app = angular.module("myapp", []);
+app.controller("myctrl", function($scope) {
+    $scope.firstName = "John";
+    $scope.lastName = "Doe";
+});
+</script>
+</body>
+</html>
+ -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+<div ng-app="myApp" w3-test-directive></div>
+
+<script> 
+var app = angular.module("myApp", []);
+
+app.directive("w3TestDirective", function() {
+    return {
+        template : "I was made in a directive constructor!"
+    };
+});
+</script>
+
+
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+
+<html>
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+<div ng-app="">
+<input type="text" ng-model="name">
+<p>{{name}}</p>
+</div>
+
+ <script src="myApp.js"></script>
+<script src="myCtrl.js"></script>
+ 
+</body>
+</html> -->
+<!-- 
+<!DOCTYPE html>
+
+<html>
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+<div ng-app ="" ng-init ="firstname='madhukesh'">
+
+
+<p>name:<input type ="text" ng-model ="firstname"></p>
+<p>You wrote: {{ 'firstName' }}</p>
+
+</div>
+
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+
+<html>
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+<div ng-app = " " ng-init ="quantity=1;price =5">
+
+Quantity: <input type="number"	ng-model="quantity">
+Costs:    <input type="number" ng-model="price">
+Total in dollar: {{ quantity * price }}
+</div>
+ -->
+
+<!-- <!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+<div ng-app="" ng-init="names=['Jani','mee','Kai']">
+  <p>Looping with ng-repeat:</p>
+  <ul>
+    <li ng-repeat="x in names">
+      {{ x }}
+    </li>
+  </ul>
+</div>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+<div ng-app ng-init="names=[
+{name:'Jani',country:'india'},
+{name:'Hege',country:'uk'},
+{name:'Kai',country:'us'}]">
+<ul>
+<li ng-repeat ="x in names">
+      {{x.name+   ','   +x.country }}
+      </li>
+      </ul>
+      </div>
+      </body>
+      </html> -->
+
+
+<!--  <!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+<div ng-app ="myapp" ng-controller ="myCtrl">
+
+Name:<input ng-model ="name">
+
+</div>
+<script>
+  var app  = angular.module('myapp',[]);
+
+   app.controller('myCtrl' , function ($scope){
+
+	$scope.name = " madhukesh kumar";
+
+});
+
+</script>
+</body>
+</html> -->
+<!-- <!--  -->
+
+<!-- <!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+    <h1 ng-click="changeName()">{{firstname}}</h1>
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.firstname = "John";
+    $scope.changeName = function() {
+        $scope.firstname = "Nelly";
+    }
+});
+</script>
+</body>
+</html> -->
+<!-- 
+<!DOCTYPE html>
+
+<html>
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+<form ng-app="" name="myForm">
+
+
+    Email:    
+
+      <input type="email" name="myAddress" ng-model="text">
+
+       <span ng-show="myForm.myAddress.$error.email">Not a valid e-mail address</span>
+
+     </form>
+
+<p>Enter your e-mail address </p>
+
+</body>
+</html>
+ -->
+
+<!-- <!DOCTYPE html>
+
+<html>
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+<body>
+<div ng-app ="myapp" ng-controller ="myctrl">
+
+<h1 ng-click ="changename()">{{firstname}}</h1>
+
+</div>
+
+	<script>
+
+var app = angular.module('myapp',[]);
+app.controller('myctrl',function($scope){
+   $scope.firstname ="Arun";
+   $scope.changename =function(){
+   	$scope.firstname = "suresh";
+   }
+});
+
+</script>
+</body>
+</html> -->
+
+
+
+
+<!-- <!DOCTYPE html>
+
+
+<html>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+<div ng-app ="myApp" ng-controller = "myCtrl">
+
+First Name: <input type="text" ng-model="firstName"><br>
+Last Name: <input type="text" ng-model="lastName"><br>
+<br>
+Full Name: {{firstName + " " + lastName}}
+
+</div>
+
+
+   <script>
+
+
+var app = angular.module('myApp',[]);
+app.controller('myCtrl',function($scope){
+ $scope.firstName ="john";
+	$scope.lastName ="Doe";
+
+});
+
+</script>
+
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+<div ng-app ="myApp" ng-controller = "myCtrl">
+<h1>{{carname}}</h1>
+</div>
+
+<script>
+      var app = angular.module('myApp',[])
+      app.controller =('myCtrl',function($scope)
+      {
+	       $scope.carname = "Volvo";
+});
+</script>
+</body>
+</html>	
